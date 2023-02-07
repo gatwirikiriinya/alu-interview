@@ -6,7 +6,7 @@ finding minimum number of operations on copy and paste
 
 def minOperations(n):
     """
-    fewest number of operations that result to n and H characters in the file.
+    fewest number of operations that result to n and H in the file.
     """
 
     if n <= 1:
