@@ -12,11 +12,10 @@ def pascal_triangle(n):
         return [[1], [1, 1]]
     pascal = [[1], [1, 1]]
     for i in range(
-            2, n):  
-        row = [1]  
+            2, n):
+        row = [1]
         for j in range(1, i):
-            row.append(pascal[i - 1][j - 1] + pascal[i - 1]
-                       [j])  
-        row.append(1)  
-        pascal.append(row)  
+            row.append(pascal[i - 1][j - 1] + pascal[i - 1][j])
+        row.append(1)
+        pascal.append(row)
     return pascal
